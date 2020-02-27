@@ -518,48 +518,50 @@ crossorigin="anonymous"></script>
 
 <script>
     
-    $('.formBtn').click(function(){
-    const divId='#'+$(this).attr('id')+'Inf';
-    $('.showInfo').hide();
-    $(divId).fadeIn(800);
-    $('.formBtn').css({"color": 'rgb(43, 42, 42)', "text-decoration": "none"});
-    $('#basalCell').removeClass('first-selection');
-    $('.formBtn').find('.square-form').css('background-color', 'rgb(43, 42, 42)');
-    $(this).find('.square-form').css('background-color','#f7e3e3');
-    $(this).css({"color": "#fff1e9", "text-decoration": "underline"});
-    });
+    $('.formBtn').click(function () {
+      const divId = '#' + $(this).attr('id') + 'Inf'
+      $('.showInfo').hide()
+      $(divId).fadeIn(800)
+      $('.formBtn').css({ color: 'rgb(43, 42, 42)', 'text-decoration': 'none' })
+      $('#basalCell').removeClass('first-selection')
+      $('.formBtn').find('.square-form').css('background-color', 'rgb(43, 42, 42)')
+      $(this).find('.square-form').css('background-color', '#f7e3e3')
+      $(this).css({ color: '#fff1e9', 'text-decoration': 'underline' })
+    })
 
 </script>
 <script>
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll=function (){
-        scrollFunction()
+    window.onscroll = function () {
+      scrollFunction()
     }
-    function scrollFunction(){
-        if(document.body.scrollTop >20 || document.documentElement.scrollTop>20){
-        document.getElementById("myBtn").style.display="block";
-        }else{
-        document.getElementById("myBtn").style.display="none";
-        }
+    function scrollFunction () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById('myBtn').style.display = 'block'
+      } else {
+        document.getElementById('myBtn').style.display = 'none'
+      }
     }
-    function topFunction() {
-    document.body.scrollTop=0;
-    document.documentElement.scrollTop=0;
+    function topFunction () {
+      document.body.scrollTop = 0
+      document.documentElement.scrollTop = 0
     }
+
 </script>
 <script>
-    $('#toggle-button').on("click", function(){
-        $('.mobile-nav-animation').toggleClass('mobile-nav-animation-open');
-        $(this).toggleClass("active");
+    $('#toggle-button').on('click', function () {
+      $('.mobile-nav-animation').toggleClass('mobile-nav-animation-open')
+      $(this).toggleClass('active')
     })
 
-    $('.mobile-links').on('click', function(){
-        $('html,body').css({
-            height:'auto'
-        });
-        $('.mobile-nav-animation').removeClass("mobile-nav-animation-open");
-        $('#toggle-button').removeClass("active");
+    $('.mobile-links').on('click', function () {
+      $('html,body').css({
+        height: 'auto'
+      })
+      $('.mobile-nav-animation').removeClass('mobile-nav-animation-open')
+      $('#toggle-button').removeClass('active')
     })
+
 </script>
 
 </body>
